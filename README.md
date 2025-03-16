@@ -47,35 +47,35 @@ API 网关服务：负责处理外部 HTTP 请求，路由到相应的微服务�
 
 
 api网关<br>
-api
-├─ handler
-│    ├─ auth.go
-│    ├─ cart_handler.go
-│    ├─ checkout_handler.go
-│    ├─ order_handler.go
-│    ├─ payment_handler.go
-│    ├─ product_handler.go
-│    └─ user_handle.go
-├─ main.go
-├─ middleware
-│    └─ jwtauth.go
-└─ router
-       └─ router.go
+api<br>
+├─ handler<br>
+│    ├─ auth.go<br>
+│    ├─ cart_handler.go<br>
+│    ├─ checkout_handler.go<br>
+│    ├─ order_handler.go<br>
+│    ├─ payment_handler.go<br>
+│    ├─ product_handler.go<br>
+│    └─ user_handle.go<br>
+├─ main.go<br>
+├─ middleware<br>
+│    └─ jwtauth.go<br>
+└─ router<br>
+       └─ router.go<br>
 <br>
 微服务模块<br>
 
-checkout
-├─ build.sh
-├─ handler.go
-├─ kitex_info.yaml
-├─ main.go
-├─ rpc_cli
-│    ├─ cart_cli.go
-│    ├─ order_cli.go
-│    ├─ payment_cli.go
-│    └─ product_cli.go
-└─ script
-       └─ bootstrap.sh
+checkout<br>
+├─ build.sh<br>
+├─ handler.go<br>
+├─ kitex_info.yaml<br>
+├─ main.go<br>
+├─ rpc_cli<br>
+│    ├─ cart_cli.go<br>
+│    ├─ order_cli.go<br>
+│    ├─ payment_cli.go<br>
+│    └─ product_cli.go<br>
+└─ script<br>
+       └─ bootstrap.sh<br>
 <br>
 数据库设计<br>
 
@@ -100,23 +100,23 @@ API 网关服务：mall/api<br>
 支付服务：mall/rpc/payment<br>
 结算服务：mall/rpc/checkout<br>
 mall<br>
-├─ .idea
-├─ api  //api网关
-├─ go.mod
-├─ go.sum
-├─ idl  //接口定义
-├─ kitex_gen
-├─ model //数据表定义
-├─ rpc
-│    ├─ auth  //鉴权微服务
-│    ├─ cart   //购物车微服务
-│    ├─ checkout //结算微服务
-│    ├─ order//订单微服务
-│    ├─ payment//支付微服务
-│    ├─ product//产品微服务
-│    └─ user//用户微服务
-└─ utils
-       └─ response.go //网关统一返回结构
+├─ .idea<br>
+├─ api  //api网关<br>
+├─ go.mod<br>
+├─ go.sum<br>
+├─ idl  //接口定义<br>
+├─ kitex_gen<br>
+├─ model //数据表定义<br>
+├─ rpc<br>
+│    ├─ auth  //鉴权微服务<br>
+│    ├─ cart   //购物车微服务<br>
+│    ├─ checkout //结算微服务<br>
+│    ├─ order//订单微服务<br>
+│    ├─ payment//支付微服务<br>
+│    ├─ product//产品微服务<br>
+│    └─ user//用户微服务<br>
+└─ utils<br>
+       └─ response.go //网关统一返回结构<br>
 
 
 
@@ -176,25 +176,25 @@ Endpoint: POST /payment/charge<br>
 checkout<br>
 结算服务<br>
 Endpoint：/checkout<br>
-用例：
-{
-  "user_id": 5,
-  "firstname": "John",
-  "lastname": "Doe",
-  "email": "test@example.com",
-  "address": {
-    "street_address": "123 Main St",
-    "city": "City",
-    "state": "State",
-    "country": "Country",
-    "zip_code": "12345"
-  },
-  "credit_card": {
-    "credit_card_number": "4111111111111111",
-    "credit_card_cvv": 123,
-    "credit_card_expiration_year": 2025,
-    "credit_card_expiration_month": 3
-  }
+用例：<br>
+{<br>
+  "user_id": 5,<br>
+  "firstname": "John",<br>
+  "lastname": "Doe",<br>
+  "email": "test@example.com",<br>
+  "address": {<br>
+    "street_address": "123 Main St",<br>
+    "city": "City",<br>
+    "state": "State",<br>
+    "country": "Country",<br>
+    "zip_code": "12345"<br>
+  },<br>
+  "credit_card": {<br>
+    "credit_card_number": "4111111111111111",<br>
+    "credit_card_cvv": 123,<br>
+    "credit_card_expiration_year": 2025,<br>
+    "credit_card_expiration_month": 3<br>
+  }<br>
 }<br>
 [图片]
 
