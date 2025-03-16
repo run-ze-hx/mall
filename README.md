@@ -1,4 +1,4 @@
-#一、项目介绍
+#一、项目介绍#
 本项目是一个基于微服务架构的电商系统，包含用户管理、商品管理、购物车、订单处理和支付等功能模块。
 项目服务地址：localhost:8889（API 网关服务地址）
 https://github.com/run-ze-hx/mall
@@ -9,7 +9,7 @@ https://github.com/run-ze-hx/mall
 
 
 
-#二、项目实现
+#二、项目实现#
 ##2.1 技术选型与相关开发文档
 技术选型：
 微服务框架：CloudWego Kitex
